@@ -12618,7 +12618,7 @@ body {
   letter-spacing: -0.5px;
 }
 
-.uk-button-primary {
+a.uk-button.uk-button-primary.uk-button-large {
   color: #000;
   background-color: #f3c565;
   text-transform: capitalize;
@@ -12626,31 +12626,32 @@ body {
   line-height: 58px;
   letter-spacing: -0.5px;
   font-family: "Work Sans", sans-serif;
-  font-size: 400;
+  font-weight: 400;
   border: 2px solid transparent;
   position: relative;
   transition: all 0.3s ease-in-out;
+  z-index: 99;
 }
 
-.uk-button-primary::before {
+a.uk-button.uk-button-primary.uk-button-large::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0%;
   background: #f1bc4d;
-  z-index: -99;
+  z-index: -1;
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
 
-.uk-button-primary:hover {
+a.uk-button.uk-button-primary.uk-button-large:hover {
   background-color: #f1bc4d;
   color: #000;
   border-color: transparent;
 }
 
-.uk-button-primary:hover::before {
+a.uk-button.uk-button-primary.uk-button-large:hover::before {
   width: 100%;
 }
 
