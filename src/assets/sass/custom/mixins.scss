@@ -1,0 +1,30 @@
+@mixin hook-button-text() {
+  position: relative;
+  font-size: 15.5px;
+  line-height: 26.35px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  font-family: $base-heading-font-family;
+  text-transform: capitalize;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -45px;
+    width: 26px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2222%22%20height%3D%2214%22%20viewBox%3D%220%200%2022%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23f3c565%22%20stroke-width%3D%222%22%20d%3D%22M14.4%201l5.8%205.9-5.8%206%22%2F%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23f3c565%22%20d%3D%22M0%206h18.8v2H0z%22%2F%3E%0A%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) 50%;
+    transition: background-position 0.2s ease-out;
+  }
+}
+
+@mixin hook-button-text-hover() {
+  &::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2222%22%20height%3D%2214%22%20viewBox%3D%220%200%2022%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23f3c565%22%20stroke-width%3D%222%22%20d%3D%22M14.4%201l5.8%205.9-5.8%206%22%2F%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23f3c565%22%20d%3D%22M0%206h18.8v2H0z%22%2F%3E%0A%3C%2Fsvg%3E");
+    background-position: 100% 50%;
+  }
+  color: $global-primary-background;
+}

@@ -42,7 +42,7 @@ $base-selection-background: rgba(243,197,101,.7);
 //HEADING
 // ===========================
 $base-heading-font-family: "Work Sans", sans-serif;
-// $base-heading-font-weight: 500;
+$base-heading-font-weight: 500;
 // $base-heading-color: #4e4b4b;
 // $heading-line-width:200px;
 // $heading-xlarge-font-size-l: 114px;
@@ -57,6 +57,6 @@ $base-heading-font-family: "Work Sans", sans-serif;
 // ===========================
 //OFFCANVAS
 // ===========================
-// $offcanvas-bar-background: #fff;
+$offcanvas-bar-background: #fff;
 $overlay-primary-background: rgba(243,197,101,.8);
 $navbar-background: #fff;
